@@ -75,7 +75,7 @@ def write(madlib):
   madlib (str): The completed MadLibs story.
   """
   timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-  output_file_path = f'madlib_cli\\assets/completed_madlib_{timestamp}.txt'
+  output_file_path = f'madlib_cli/assets/completed_madlib_{timestamp}.txt'
   with open(output_file_path, 'w') as file:
     file.write(madlib)
 
@@ -121,7 +121,7 @@ def main():
   """
   print_instructions()
   try:
-    template = read_template('madlib_cli\\assets\dark_and_stormy_night_template.txt')
+    template = read_template('madlib_cli/assets/dark_and_stormy_night_template.txt')
 
     stripped_string, parts_of_speech = parse_template(template)
 
